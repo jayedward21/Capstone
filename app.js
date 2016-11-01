@@ -9,7 +9,7 @@ $(function(){
 });
 
 function getRequest(searchTerm){
-  $.getJSON('http://api.springer.com/metadata/json?q=' + searchTerm + '&api_key=c0822968168cdedf2a5a94608a28c833', function(data){
+  $.getJSON('https://api.springer.com/metadata/json?q=' + searchTerm + '&api_key=c0822968168cdedf2a5a94608a28c833', function(data){
     showResults(data.records);
   });
 }
