@@ -1,1 +1,0 @@
-Help users access libary database to find research article to help students with their papers. — for example, Global Warming input, outputs articles.
