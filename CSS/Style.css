@@ -1,6 +1,6 @@
 
 body{
-  background-color: #277650;
+  background-color: lightblue;
   text-align: center;
 }
 form {
@@ -17,7 +17,7 @@ fieldset {
 
 }
 input {
-  background: #AA3F39;
+  background: blue;
   border: 0;
   color: #fff;
   cursor: pointer;
@@ -26,16 +26,14 @@ input {
   padding: 15px 16px;
   margin-bottom: 10px;
 }
-li {
-  list-style: none;
-}
 #query {
-  background: #407F7F;
+  background: lightgreen;
   text-align: center;
   width: 580px;
 }
 .wrapper {
   background-color: white;
+  border: 1px solid black;
 }
 .wrapper input {
   color: black;
