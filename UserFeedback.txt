@@ -1,0 +1,15 @@
+User Feedback
+
+-Users have reported that the color scheme does not look good.
+-Users have reported that the results need to be separated
+-Users have asked if there is a way to see if the books are free
+-Users like the functionality and think its a useful app
+-Users find it easy to use
+
+I have changed to color scheme. Made the colors, basic colors so all Internet browsers have it look the same
+
+I used a black line and some breaks to separate the results better
+
+I added if the books were free or not before the user opens it
+
+funcationlity stayed the same.
