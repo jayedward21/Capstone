@@ -1,4 +1,4 @@
-var yo = "hello"
+
 
 $(function(){
   $('#search-term').submit(function(event){
@@ -9,15 +9,17 @@ $(function(){
 });
 
 function getRequest(searchTerm){
-  $.getJSON('https://api.springer.com/metadata/json?q=' + searchTerm + '&api_key=c0822968168cdedf2a5a94608a28c833', function(data){
-    showResults(data.records);
+  $.getJSON('http://api.springer.com/metadata/json?q=' + searchTerm + '&api_key=c0822968168cdedf2a5a94608a28c833', function(data){
+    showResults(data.records, searchTerm);
   });
 }
 
-function showResults(result){
+function showResults(result, searchTerm){
   var html = "";
   $.each(result, function(index,values){
-    html += '<a href=' + values.url[0].value + '>' + values.title + ' </a><br><p> ' + values.abstract + ' </p>';
+    html +=  '_____________________________________________________________________________ <br><br>' +
+	'<a href=' + values.url[0].value + '>' + values.publicationName + ' </a><br><p> ' + values.abstract + ' <br><br> <p> Free publication: ' 
+	+ values.openaccess + '<p> Further research into this topic by searching: ' + values.title + '</p>';
  
   });
   $('#search-results').html(html);
